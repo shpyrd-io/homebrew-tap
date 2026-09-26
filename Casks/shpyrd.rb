@@ -32,6 +32,7 @@ cask "shpyrd" do
   end
 
   binary "shpyrd"
+  binary "shpyrd-ctl"
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
